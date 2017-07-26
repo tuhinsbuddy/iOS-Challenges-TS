@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Show Timer Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ShowTimerMainViewController" customModule="halodDocTImerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GdK-kb-8g6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTS-gi-h6M">
+                                <rect key="frame" x="20" y="587" width="335" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXd-VL-zhs">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <state key="normal" title="Add Item"/>
+                                        <connections>
+                                            <action selector="addItemBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSA-Jc-fN8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eXd-VL-zhs" secondAttribute="trailing" id="8ig-6V-rxV"/>
+                                    <constraint firstItem="eXd-VL-zhs" firstAttribute="leading" secondItem="UTS-gi-h6M" secondAttribute="leading" id="NaQ-Hq-CcP"/>
+                                    <constraint firstAttribute="height" constant="80" id="Wuj-Ac-Dx3"/>
+                                    <constraint firstAttribute="bottom" secondItem="eXd-VL-zhs" secondAttribute="bottom" id="Yt1-65-Xq4"/>
+                                    <constraint firstItem="eXd-VL-zhs" firstAttribute="top" secondItem="UTS-gi-h6M" secondAttribute="top" id="xhg-O2-aIi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UTS-gi-h6M" firstAttribute="top" secondItem="GdK-kb-8g6" secondAttribute="bottom" constant="8" symbolic="YES" id="5eI-Fz-eVm"/>
+                            <constraint firstAttribute="trailing" secondItem="UTS-gi-h6M" secondAttribute="trailing" constant="20" symbolic="YES" id="Enf-p9-s3W"/>
+                            <constraint firstItem="GdK-kb-8g6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ScH-Me-Hdk"/>
+                            <constraint firstItem="GdK-kb-8g6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XWm-to-mum"/>
+                            <constraint firstAttribute="trailing" secondItem="GdK-kb-8g6" secondAttribute="trailing" id="bzW-mZ-IJG"/>
+                            <constraint firstItem="UTS-gi-h6M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="eOb-zL-eAg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UTS-gi-h6M" secondAttribute="bottom" id="j6V-At-iFx"/>
+                            <constraint firstItem="GdK-kb-8g6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l4L-LY-cEC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addItemBtnOutlet" destination="eXd-VL-zhs" id="TbV-2d-h4j"/>
+                        <outlet property="addItemBtnSuperView" destination="UTS-gi-h6M" id="ubv-2q-jr4"/>
+                        <outlet property="showTimerMainTableView" destination="GdK-kb-8g6" id="ihK-kk-RBp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="119.1904047976012"/>
+        </scene>
+    </scenes>
+</document>
