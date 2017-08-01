@@ -11,8 +11,6 @@ This is the first test which can be asked to the candidate in an iOS interview. 
 
 5. The state in each row should be saved when we scroll through items. i.e. when we scroll through tableview the countdown timer should not be refreshed with minimum 30+ rows.
 
-
-
 To run on the system 
 
     1. first try to Clone the repository/download zip using the "Clone or download" button. 
@@ -24,3 +22,9 @@ To run on the system
 
 
 N.B. - Before running the solution please go throgh the above scenerio to understand it better.
+
+
+Final Results.
+
+![empty state](https://user-images.githubusercontent.com/20298863/28815852-609eae5a-76c0-11e7-8ca7-b715640bdf98.png)    ![add timer](https://user-images.githubusercontent.com/20298863/28815851-60800ffe-76c0-11e7-84ee-f8ae23fd6527.png)    
+![timer ended](https://user-images.githubusercontent.com/20298863/28815853-60d4b3c4-76c0-11e7-9532-7a39431a713d.png)
